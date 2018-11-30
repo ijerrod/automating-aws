@@ -19,9 +19,9 @@ from bucket import BucketManager
 session = None
 bucket_manager = None
 
+
 @click.group()
-@click.option('--profile', default=None,
-    help="Enter an AWS profile.")
+@click.option('--profile', default=None, help="Enter an AWS profile.")
 def cli(profile):
     """Deploys websites to AWS."""
     global session, bucket_manager
@@ -32,7 +32,6 @@ def cli(profile):
 
     session = boto3.Session(**session_cfg)
     bucket_manager = BucketManager(session)
-
 
 
 @cli.command('list-buckets')
@@ -67,6 +66,7 @@ def setup_bucket(bucket):
 def sync(pathname, bucket):
     """Sync contents of PATHNAME to Bucket."""
     bucket_manager.sync(pathname, bucket)
+    print(bucket_manager.get_bucket_url(bucket_manager.s3.Bucket(bucket)))
 
 
 if __name__ == '__main__':
