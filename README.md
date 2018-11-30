@@ -11,3 +11,4 @@ s3web script has the following features:
 - List contents of buckets
 - Create and set up bucket
 - Sync directory tree to S3 bucket
+- Allows you to set an AWS profile --profile=<profileName>
