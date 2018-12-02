@@ -1,0 +1,6 @@
+{
+  "nofity": {
+    "slack_webhook_url": "slack webhook",
+    "profile": "pythonAutomation"
+  }
+}
