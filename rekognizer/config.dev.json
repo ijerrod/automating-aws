@@ -1,0 +1,7 @@
+{
+  "rekognizer": {
+    "profile": "pythonAutomation",
+    "videos_bucket": "rekog-bucket-test-321",
+    "videos_table": ""
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "rekognizer": {
+    "profile": "",
+    "videos_bucket": "",
+    "videos_table": ""
+  }
+}
